@@ -1,12 +1,13 @@
-package com.example.administrador.myapplication;
+package com.example.administrador.myapplication.controller;
 
 import android.app.Activity;
-import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Adapter;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
+
+import com.example.administrador.myapplication.model.entities.Client;
+import com.example.administrador.myapplication.R;
 
 import java.util.List;
 

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Minha Aplicação</string>
+    <string name="hello_world">Olá mundo!</string>
+    <string name="action_settings">Opções</string>
+    <string name="login">Entrar</string>
+    <string name="userName">Usuário</string>
+    <string name="password">Senha</string>
+    <string name="name">Nome</string>
+    <string name="age">Idade</string>
+    <string name="phone">Telefone</string>
+    <string name="address">Endereço</string>
+    <string name="save">Salvar</string>
+    <string name="add">Adicionar</string>
+</resources>

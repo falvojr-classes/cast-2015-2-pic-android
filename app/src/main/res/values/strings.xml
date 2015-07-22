@@ -5,4 +5,10 @@
     <string name="login">login</string>
     <string name="userName">User name</string>
     <string name="password">Password</string>
+    <string name="name">Name</string>
+    <string name="age">Age</string>
+    <string name="phone">Phone</string>
+    <string name="address">Address</string>
+    <string name="save">save</string>
+    <string name="add">Add</string>
 </resources>
