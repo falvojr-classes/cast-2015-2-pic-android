@@ -11,4 +11,8 @@
     <string name="address">Address</string>
     <string name="save">save</string>
     <string name="add">Add</string>
+    <string name="required_field">Field Required!</string>
+    <string name="success">Success!</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
 </resources>

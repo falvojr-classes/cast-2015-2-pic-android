@@ -11,4 +11,8 @@
     <string name="address">Endereço</string>
     <string name="save">Salvar</string>
     <string name="add">Adicionar</string>
+    <string name="required_field">Campo obrigatório!</string>
+    <string name="success">Sucesso!</string>
+    <string name="edit">Editar</string>
+    <string name="delete">Deletar</string>
 </resources>
