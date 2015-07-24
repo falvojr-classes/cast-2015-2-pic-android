@@ -5,12 +5,14 @@ import android.os.Parcel;
 import android.os.Parcelable;
 
 import com.example.administrador.myapplication.model.persistence.MemoryClientRepository;
+import com.example.administrador.myapplication.model.persistence.SQLiteClientRepository;
 
 import java.io.Serializable;
 import java.util.List;
 
 public class Client implements Serializable, Parcelable {
 
+    private Integer id;
     private String name;
     private Integer age;
     private String phone;
@@ -23,6 +25,14 @@ public class Client implements Serializable, Parcelable {
     public Client(Parcel in) {
         super();
         readToParcel(in);
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public Integer getAge() {
@@ -87,18 +97,6 @@ public class Client implements Serializable, Parcelable {
         return result;
     }
 
-    public void save() {
-        MemoryClientRepository.getInstance().save(this);
-    }
-
-    public static List<Client> getAll() {
-        return MemoryClientRepository.getInstance().getAll();
-    }
-
-    public void delete() {
-        MemoryClientRepository.getInstance().delete(this);
-    }
-
     @Override
     public int describeContents() {
         return 0;
@@ -106,6 +104,7 @@ public class Client implements Serializable, Parcelable {
 
     @Override
     public void writeToParcel(Parcel dest, int flags) {
+        dest.writeInt(id == null ? -1 : id);
         dest.writeString(name == null ? "" : name);
         dest.writeString(phone == null ? "" : phone);
         dest.writeInt(age == null ? -1 : age);
@@ -113,6 +112,8 @@ public class Client implements Serializable, Parcelable {
     }
 
     public void readToParcel(Parcel in) {
+        int partialId = in.readInt();
+        id = partialId == -1 ? null : partialId;
         name = in.readString();
         phone = in.readString();
         int partialAge = in.readInt();
@@ -124,10 +125,23 @@ public class Client implements Serializable, Parcelable {
         public Client createFromParcel(Parcel source) {
             return new Client(source);
         }
-
         public Client[] newArray(int size) {
             return new Client[size];
         }
     };
+
+
+    public void save() {
+        SQLiteClientRepository.getInstance().save(this);
+    }
+
+    public static List<Client> getAll() {
+        return SQLiteClientRepository.getInstance().getAll();
+    }
+
+    public void delete() {
+        SQLiteClientRepository.getInstance().delete(this);
+    }
+
 
 }

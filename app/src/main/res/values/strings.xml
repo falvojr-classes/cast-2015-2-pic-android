@@ -15,4 +15,8 @@
     <string name="success">Success!</string>
     <string name="edit">Edit</string>
     <string name="delete">Delete</string>
+    <string name="confirm_progress">Are you sure?</string>
+    <string name="confirm">Confirm</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
 </resources>
