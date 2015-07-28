@@ -19,4 +19,6 @@
     <string name="confirm">Confirmação</string>
     <string name="yes">Sim</string>
     <string name="no">Não</string>
+    <string name="cep">Cep</string>
+    <string name="find">Pesquisar</string>
 </resources>
