@@ -15,9 +15,8 @@ public class ClientContract {
     public static final String NAME = "name";
     public static final String AGE = "age";
     public static final String PHONE = "phone";
-    public static final String ADDRESS = "address";
 
-    public static final String[] COLUMNS = {ID, NAME, AGE, PHONE, ADDRESS};
+    public static final String[] COLUMNS = {ID, NAME, AGE, PHONE};
 
     public static String getCreateSql() {
         StringBuilder sql = new StringBuilder();
@@ -28,7 +27,6 @@ public class ClientContract {
         sql.append(NAME + " TEXT, ");
         sql.append(AGE + " INTEGER, ");
         sql.append(PHONE + " TEXT, ");
-        sql.append(ADDRESS + " TEXT ");
         sql.append(" ); ");
         return sql.toString();
     }
@@ -39,7 +37,6 @@ public class ClientContract {
         values.put(ClientContract.NAME, client.getName());
         values.put(ClientContract.AGE, client.getAge());
         values.put(ClientContract.PHONE, client.getPhone());
-        values.put(ClientContract.ADDRESS, client.getAddress());
         return values;
     }
 
@@ -50,7 +47,6 @@ public class ClientContract {
             client.setName(cursor.getString(cursor.getColumnIndex(ClientContract.NAME)));
             client.setAge(cursor.getInt(cursor.getColumnIndex(ClientContract.AGE)));
             client.setPhone(cursor.getString(cursor.getColumnIndex(ClientContract.PHONE)));
-            client.setAddress(cursor.getString(cursor.getColumnIndex(ClientContract.ADDRESS)));
             return client;
         }
         return null;

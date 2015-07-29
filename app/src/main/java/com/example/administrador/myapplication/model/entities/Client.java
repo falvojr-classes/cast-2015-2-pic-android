@@ -1,10 +1,8 @@
 package com.example.administrador.myapplication.model.entities;
 
-import android.location.Address;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-import com.example.administrador.myapplication.model.persistence.MemoryClientRepository;
 import com.example.administrador.myapplication.model.persistence.SQLiteClientRepository;
 
 import java.io.Serializable;
@@ -16,7 +14,7 @@ public class Client implements Serializable, Parcelable {
     private String name;
     private Integer age;
     private String phone;
-    private String address;
+    private Address address;
 
     public Client() {
         super();
@@ -59,11 +57,11 @@ public class Client implements Serializable, Parcelable {
         this.phone = phone;
     }
 
-    public String getAddress() {
+    public Address getAddress() {
         return address;
     }
 
-    public void setAddress(String address) {
+    public void setAddress(Address address) {
         this.address = address;
     }
 
@@ -108,7 +106,7 @@ public class Client implements Serializable, Parcelable {
         dest.writeString(name == null ? "" : name);
         dest.writeString(phone == null ? "" : phone);
         dest.writeInt(age == null ? -1 : age);
-        dest.writeString(address == null ? "" : address);
+        dest.writeParcelable(address, flags);
     }
 
     public void readToParcel(Parcel in) {
@@ -118,18 +116,18 @@ public class Client implements Serializable, Parcelable {
         phone = in.readString();
         int partialAge = in.readInt();
         age = partialAge == -1 ? null : partialAge;
-        address = in.readString();
+        address = in.readParcelable(Address.class.getClassLoader());
     }
 
     public static final Parcelable.Creator<Client> CREATOR = new Parcelable.Creator<Client>() {
         public Client createFromParcel(Parcel source) {
             return new Client(source);
         }
+
         public Client[] newArray(int size) {
             return new Client[size];
         }
     };
-
 
     public void save() {
         SQLiteClientRepository.getInstance().save(this);
