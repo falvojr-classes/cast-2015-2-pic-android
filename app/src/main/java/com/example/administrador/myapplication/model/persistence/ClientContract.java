@@ -26,7 +26,7 @@ public class ClientContract {
         sql.append(ID + " INTEGER PRIMARY KEY, ");
         sql.append(NAME + " TEXT, ");
         sql.append(AGE + " INTEGER, ");
-        sql.append(PHONE + " TEXT, ");
+        sql.append(PHONE + " TEXT");
         sql.append(" ); ");
         return sql.toString();
     }
