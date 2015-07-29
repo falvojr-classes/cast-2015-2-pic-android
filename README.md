@@ -1,6 +1,6 @@
 <h1>Fundamentos do Android</h1>
 <p>Curso destinado a introdução e aplicação dos conceitos básicos para o desenvolvimento de aplicativos Android.
-<br>O curso será ministrado de 15 a 31 de Julho de 2015.</p>
+<br>O curso será ministrado de 15 a 31 de Julho de 2015 e teve como base o primeiro PIC (disponível <a href="https://github.com/RenanJPaula/fundamentos-android">aqui</a> para consulta).</p>
 <h2>Tópicos abordados</h2>
 
 1.	<a href="https://docs.google.com/presentation/d/1BYDn1c0tYpRTrv_8pzUZf_HD8znF9SA8c16SLiQLNhU/edit?usp=sharing">Introdução</a>
