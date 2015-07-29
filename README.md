@@ -25,30 +25,30 @@
   3.	Serializable
   4.	Parcelable
   5.	Serializable ou Parcelable?
-5.	<a href="https://docs.google.com/presentation/d/1vFP1eZiC914fhkm4dy46Qo--NrP12716afS03vsxVxY/edit?usp=sharing">Themes e Material Design</a>
+5.	<a href="https://docs.google.com/presentation/d/1K70IxZp87Yb8tVzgUjliOOORby4RDsI3sJs0O3EZCYE/edit?usp=sharing">Menus e Dialogs</a>
+  1.	Action Bar Menu
+  2.	Context Menu
+  3.	Popup Menu
+  4.	Dialogs
+6.	<a href="https://docs.google.com/presentation/d/10f3uaWxiu82OSwlOCzxTaNCsUqX1gLcrDxfIV-Gf2w8/edit?usp=sharing">SQLite</a>
+  1.	O que é SQLite?
+  2.	Android SQLite API
+7.	<a href="https://docs.google.com/presentation/d/1d_2Ul6P_YSDwjtbS2MCPu5tie7BsM232MC8vJVIFLJk/edit?usp=sharing">HTTP e REST</a>
+  1.	Protocolo HTTP
+  2.	Estilo Arquitetônico REST
+  3.	JSON
+  4.	Android HTTP API
+8.	<a href="https://docs.google.com/presentation/d/1vFP1eZiC914fhkm4dy46Qo--NrP12716afS03vsxVxY/edit?usp=sharing">Themes e Material Design</a>
   1.	O que é Material Design?
   2.	Themes
   3.	Floating Labels
   4.	Floating Action Button
   5.	Recycler Views
   6.	Card Views
-6.	<a href="https://docs.google.com/presentation/d/1plers7rDw_gaJFGkH9_FEicVAzt7unUgyVwsY74sN50/edit?usp=sharing">Layouts e Views</a>
+9.	<a href="https://docs.google.com/presentation/d/1plers7rDw_gaJFGkH9_FEicVAzt7unUgyVwsY74sN50/edit?usp=sharing">Layouts e Views</a>
   1.	Customização de Layouts
   2.	Customização de Views
   3.	Componentização
-7.	<a href="https://docs.google.com/presentation/d/1K70IxZp87Yb8tVzgUjliOOORby4RDsI3sJs0O3EZCYE/edit?usp=sharing">Menus e Dialogs</a>
-  1.	Action Bar Menu
-  2.	Context Menu
-  3.	Popup Menu
-  4.	Dialogs
-8.	<a href="https://docs.google.com/presentation/d/10f3uaWxiu82OSwlOCzxTaNCsUqX1gLcrDxfIV-Gf2w8/edit?usp=sharing">SQLite</a>
-  1.	O que é SQLite?
-  2.	Android SQLite API
-9.	<a href="https://docs.google.com/presentation/d/1d_2Ul6P_YSDwjtbS2MCPu5tie7BsM232MC8vJVIFLJk/edit?usp=sharing">HTTP e REST</a>
-  1.	Protocolo HTTP
-  2.	Estilo Arquitetônico REST
-  3.	JSON
-  4.	Android HTTP API
 10.	Publicação [Extra]
   1.	Exportação de APK
   2.	ProGuard
