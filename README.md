@@ -53,3 +53,19 @@
   1.	Exportação de APK
   2.	ProGuard
   3.	Google Play Store
+
+<h2>Avaliação</h2>
+- Criar uma tabela de usuário e incluir um usuário padrão.
+
+- Implementar o mecanismo de autenticação para entrar no app.
+
+<h2>Observações</h2>
+- O projeto de avaliação deve ser publicano no github pessoal do participante.
+
+- Os participantes devem favoritar o repositório do curso! É através deste processo que identificaremos o github dos participantes para efetuarmos as devidas avaliações e feedbacks.
+
+- Os feedbacks serão dados através do sistema de issues do github.
+
+- As funcionalidades extras que o participante quiser destacar devem ser descritas no README do seu projeto.
+
+- A avaliação dos projetos terá início no dia 30/07/2015 
