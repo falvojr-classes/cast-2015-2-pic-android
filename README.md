@@ -57,7 +57,7 @@
 <h2>Avaliação</h2>
 - Criar uma tabela de usuário e incluir um usuário padrão.
 
-- Implementar o mecanismo de autenticação para entrar no app.
+- Implementar o mecanismo de autenticação para entrar no app usando o usuário padrão.
 
 <h2>Observações</h2>
 - O projeto de avaliação deve ser publicano no github pessoal do participante.
