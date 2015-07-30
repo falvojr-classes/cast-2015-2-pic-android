@@ -3,21 +3,22 @@
     package="com.example.administrador.myapplication">
 
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme"
+        android:theme="@style/AppThemeMaterial"
         android:name=".MyApplication">
 
         <activity
             android:name=".controller.ClientListActivity"
-            android:label="@string/app_name"></activity>
+            android:label="@string/app_name"/>
 
         <activity
             android:name=".controller.ClientPersistActivity"
-            android:label="@string/app_name"></activity>
+            android:label="@string/app_name"/>
 
         <activity
             android:name=".controller.LoginActivity"
